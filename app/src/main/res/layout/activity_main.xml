@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weatherbac"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="25dp"
+        android:fontFamily="@font/bungee_shade"
+        android:text="WEATHER"
+        android:textColor="#05F8BD"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="263dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:fontFamily="@font/allan_bold"
+        android:hint="Enter City..."
+        android:inputType="textCapWords"
+        android:textAllCaps="true"
+        android:textColor="#0028FA"
+        android:textColorHint="#A4FFFFFF"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/etCountry"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="@font/allan_bold"
+        android:hint="Enter Country Code...(optional)"
+        android:inputType="textCapCharacters"
+        android:textAllCaps="true"
+        android:textColor="#0028FA"
+        android:textColorHint="#A6FFFFFF"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnGet"
+        android:layout_width="267dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/akronim"
+        android:onClick="getWeatherDetails"
+        android:text="Check Weather"
+        android:textAllCaps="false"
+        android:textColor="#0004FF"
+        android:textSize="35dp"
+        app:backgroundTint="#60FFC107" />
+
+    <ScrollView
+        android:layout_width="396dp"
+        android:layout_height="323dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingRight="0.5dp">
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:gravity="center_horizontal"
+            android:text="WELCOME!"
+            android:textColor="#041F83"
+            android:textSize="28dp" />
+    </ScrollView>
+
+
+</LinearLayout>
